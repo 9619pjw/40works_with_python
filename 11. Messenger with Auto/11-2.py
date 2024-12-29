@@ -22,7 +22,7 @@ except pyautogui.ImageNotFoundException:
             print('ImageNotFoundException')
 
 clickPosition = pyautogui.center(picPosition)
-pyautogui.doubleClick(clickPosition)
+pyautogui.doubleClick(clickPosition.x + 15, clickPosition.y)
 
 pyperclip.copy("이 메시지는 자동으로 전송되는 메시지입니다.")
 pyautogui.hotkey("ctrl", "v")
